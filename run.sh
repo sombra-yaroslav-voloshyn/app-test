@@ -1,5 +1,5 @@
 #!/bin/sh
-set -xe
+set -xev
 
-ng test && echo "tests done !!!!!!!!!!!!!!!!!" || echo "tests failed !!!!!!!!!!!!!!!!!" && exit 0
+ng test && echo "tests done !!!!!!!!!!!!!!!!!" || echo "tests failed !!!!!!!!!!!!!!!!!"
 ng build --prod && echo "Build successes!"
