@@ -1,2 +1,5 @@
-ng test && echo "done !!!!!!!!!!!!!!!!!"
-ng build --prod && echo "wertyuytrertyuioiuytrertyuioiuytrertyuiuytr"
+#!/bin/sh
+set -xe
+
+ng test && echo "tests done !!!!!!!!!!!!!!!!!" || echo "tests failed !!!!!!!!!!!!!!!!!"
+ng build --prod && echo "Build successes!"
